@@ -63,7 +63,7 @@
         name: "a job for reboot"
         job: "/home/{{ USERNAME }}/bootcamp-app/web.sh"
 
- - name: install dependencies
+    - name: install dependencies
       become: yes
       command: "npm install {{ item }}"
       args:
